@@ -120,7 +120,20 @@ Environment variables are stored locally in `.env`.
 
 The `.env` file is excluded from Git using `.gitignore`.
 
-No Supabase credentials should be committed to the repository.
+No Supabase credentials should be committed to the repository. 
+
+## Testing
+
+The API was tested locally using Swagger UI and HTTP requests.
+
+- `/public/info` returns `200` without authentication. 
+- `/protected/profile` returns `401` when the token is missing.
+- `/protected/profile` returns `200` with a valid Supabase access token.
+- `/protected/profile` returns `401` with an invalid or expired token.
+- `/protected/dashboard` accepts valid Bearer tokens.
+- `/auth/signup` creates users successfully.
+- `/auth/login` returns an access token and refresh token.
+- `/auth/logout` is protected and returns `204` on successful logout.
 
 ## License
 

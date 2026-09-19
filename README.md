@@ -88,7 +88,11 @@ Authorization: Bearer <access_token>
 
 Protected endpoints reject requests when the token is missing, invalid, or expired.
 
-## Swagger Documentation
+## Swagger Documentation 
+
+### Swagger UI
+
+![Swagger UI](swagger-screenshot.png) 
 
 Interactive API documentation is available at:
 
@@ -121,3 +125,5 @@ No Supabase credentials should be committed to the repository.
 ## License
 
 This project was created as part of an API authentication assignment.
+
+
